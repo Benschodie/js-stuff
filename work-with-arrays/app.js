@@ -23,5 +23,3 @@ const fifteen = investors.filter(function(inventor) {
     }
 });
 console.log(fifteen);
-
-// es6 way
