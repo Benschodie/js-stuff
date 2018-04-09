@@ -14,6 +14,7 @@ const investors = [
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were borin in the 1500's
 
+// old way
 const fifteen = investors.filter(function(inventor) {
     if(inventor.year >= 1500 && inventor.year < 1600) {
         return true;
@@ -22,3 +23,5 @@ const fifteen = investors.filter(function(inventor) {
     }
 });
 console.log(fifteen);
+
+// es6 way
