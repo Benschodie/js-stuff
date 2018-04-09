@@ -10,3 +10,15 @@ const investors = [
     {first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
     {first: 'Daniel', last: 'Düsentrieb', year: 1267, passed: 1301 },
 ]
+
+// Array.prototype.filter()
+// 1. Filter the list of inventors for those who were borin in the 1500's
+
+const fifteen = investors.filter(function(inventor) {
+    if(inventor.year >= 1500 && inventor.year < 1600) {
+        return true;
+    } else {
+        return false;
+    }
+});
+console.log(fifteen);
