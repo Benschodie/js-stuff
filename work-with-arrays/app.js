@@ -1,5 +1,6 @@
-// 1) filter()
-// 2) map()
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// 1) Array.prototype.filter()
+// 2) Array.prototype.map()
 
 
 
