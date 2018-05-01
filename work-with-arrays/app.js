@@ -1,5 +1,6 @@
-// 1) filter()
-// 2) map()
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+// 1) Array.prototype.filter()
+// 2) Array.prototype.map()
 
 
 
@@ -52,7 +53,26 @@ console.table(fifteen)
 // const fifteen = investors.filter(checkforFifteen);
 
 // Array.prototype.map()
+// Basic Way, the for Loop <3
+const firstNames = []
+for (let i = 0; i < investors.length; i++) {
+    firstNames.push(investors[i].first)
+}
+console.log(firstNames);
 
+// Same Way with map()
+const names = investors.map(function(inventor) {
+    return inventor.first
+})
+console.log(names);
+
+// ES6 Version of the Example
+const namesES6 = investors.map(inventor => inventor.first);
+console.log(namesES6);
+
+// map() Task: Give us an array of the inventory first and last names
+const firstAndLastName = investors.map(inventor => inventor.first + ' ' + inventor.last)
+console.log(firstAndLastName);
 
 
 
