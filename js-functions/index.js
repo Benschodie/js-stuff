@@ -19,12 +19,12 @@
 
 // einer function eine function übergeben:
 
-let run = function (callback){
+const run = function (callback){
 	console.log("run(); methode wurde ausgeführt");
 	callback();
 };
 
-let f = function () {
+const f = function () {
 	console.log("f(); wurde ausgeführt");
 };
 
